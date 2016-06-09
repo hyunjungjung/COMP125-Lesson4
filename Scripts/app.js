@@ -26,7 +26,6 @@
     // check to see if paragraph one exists
     var paragraphElementsLength = paragraphElements.length - 1;
     for (var index = paragraphElementsLength; index >= 0; index--) {
-        console.log(index);
         if (paragraphElements[index]) {
             paragraphElements[index].innerHTML = paragraphs[index];
         }
