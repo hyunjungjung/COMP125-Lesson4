@@ -24,9 +24,15 @@
     paragraphs[2] = "<span class='firstSentence'>This is my third paragraph. </span>  Proin in nunc pellentesque, dictum libero sed, pharetra justo. Nam vel tincidunt urna, at finibus justo. Quisque pretium non nibh eget sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas vitae mi viverra, dictum quam fermentum, dapibus orci. Morbi ac efficitur mi. Nam pulvinar suscipit quam tempus malesuada. Praesent volutpat est quis sapien mollis consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam eget enim luctus nisi egestas mattis. Vestibulum commodo, enim in dictum tristique, libero turpis porttitor elit, ut cursus sem ligula vel nulla. Mauris dignissim eleifend facilisis. Donec eros mi, mattis at aliquam nec, pretium cursus diam.";
 
     // check to see if paragraph one exists
-    var paragraphElementsLength = paragraphElements.length - 1;
+    var paragraphElementsLength = paragraphElements.length;
     for (var index = paragraphElementsLength; index >= 0; index--) {
-        if (paragraphElements[index]) {
+        console.log("this is log");
+        console.debug("This is debug");
+        console.error("This is an error!");
+        console.info("This is info");
+        console.warn("This is warning");
+        console.assert(index<3 ,"index out of bounds");
+             if (paragraphElements[index]) {
             paragraphElements[index].innerHTML = paragraphs[index];
         }
     }
